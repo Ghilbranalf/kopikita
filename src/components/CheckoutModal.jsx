@@ -103,7 +103,7 @@ export default function CheckoutModal({ isOpen, onClose, cart, onCompleteOrder }
                     : 'border-forest-950/20 text-forest-800'
                 }`}
               >
-                🍽️ SANTAP DI TEMPAT (DINE IN)
+                SANTAP DI TEMPAT (DINE IN)
               </button>
               <button
                 type="button"
@@ -114,7 +114,7 @@ export default function CheckoutModal({ isOpen, onClose, cart, onCompleteOrder }
                     : 'border-forest-950/20 text-forest-800'
                 }`}
               >
-                🛍️ BAWA PULANG (TAKE AWAY)
+                BAWA PULANG (TAKE AWAY)
               </button>
             </div>
           </div>

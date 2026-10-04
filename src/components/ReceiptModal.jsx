@@ -61,7 +61,7 @@ export default function ReceiptModal({ isOpen, onClose, transaction }) {
     });
     text += `%0A*TOTAL: ${formatRupiah(transaction.totalAmount)}*%0A`;
     text += `Metode: ${transaction.paymentMethod.toUpperCase()}%0A`;
-    text += `Status: Sukses Lunas ✅`;
+    text += `Status: Sukses Lunas`;
 
     window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
   };
@@ -96,7 +96,12 @@ export default function ReceiptModal({ isOpen, onClose, transaction }) {
         <div ref={receiptRef} className="p-6 bg-[#faf8f2] font-mono text-xs text-forest-950 border-b border-dashed border-forest-950/30">
           
           {/* Logo & Cafe Header */}
-          <div className="text-center pb-4 border-b border-dashed border-forest-950/30">
+          <div className="text-center pb-4 border-b border-dashed border-forest-950/30 flex flex-col items-center">
+            <img 
+              src="/images/logo.PNG" 
+              alt="KopiKita" 
+              className="w-12 h-12 object-contain mb-1.5"
+            />
             <h4 className="font-headline text-2xl text-forest-950 tracking-wider">KOPIKITA.</h4>
             <p className="text-[10px] text-forest-800/80 font-sans font-bold">Jl. Biji Kopi No. 24, Kotabaru, Yogyakarta</p>
             <p className="text-[10px] text-forest-800/80 font-sans">Telp: 0812-3456-7890</p>

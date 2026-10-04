@@ -54,12 +54,17 @@ export default function Navbar({ activeTab, setActiveTab, cartCount, onOpenCart,
             </button>
           </nav>
 
-          {/* Center Brand Name (matching "CAFFO.") */}
+          {/* Center Brand Logo & Name */}
           <div 
             onClick={() => setActiveTab('home')} 
-            className="flex items-center gap-2 cursor-pointer group select-none"
+            className="flex items-center gap-2.5 cursor-pointer group select-none"
           >
-            <span className="font-headline text-3xl sm:text-4xl text-white tracking-widest uppercase transition-transform group-hover:scale-105">
+            <img 
+              src="/images/logo.PNG" 
+              alt="Logo KopiKita" 
+              className="w-9 h-9 sm:w-10 sm:h-10 object-contain rounded-full bg-forest-900/60 p-0.5 border border-gold-500/40" 
+            />
+            <span className="font-headline text-2xl sm:text-4xl text-white tracking-widest uppercase transition-transform group-hover:scale-105">
               KOPIKITA<span className="text-gold-500">.</span>
             </span>
           </div>

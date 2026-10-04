@@ -89,10 +89,10 @@ export default function CartDrawer({ isOpen, onClose, cart, onUpdateQuantity, on
                     {/* Custom details */}
                     <div className="flex flex-wrap gap-1 mt-1 text-[10px] text-forest-800">
                       <span className="bg-[#efebe0] px-2 py-0.5 rounded-full font-bold">
-                        {item.temperature === 'Ice' ? '❄️ Ice Cold' : '🔥 Hot'}
+                        {item.temperature === 'Ice' ? 'Ice Cold' : 'Hot'}
                       </span>
                       <span className="bg-[#efebe0] px-2 py-0.5 rounded-full font-bold">
-                        🍬 {item.sugar}
+                        {item.sugar} Sugar
                       </span>
                       {item.addOns?.map((a) => (
                         <span key={a.id} className="bg-gold-500/20 text-forest-950 px-2 py-0.5 rounded-full font-bold">

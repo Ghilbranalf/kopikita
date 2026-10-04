@@ -14,7 +14,12 @@ export default function Footer({ onNavigate }) {
           {/* Brand Info */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <span className="font-headline text-4xl text-white tracking-widest uppercase">
+              <img 
+                src="/images/logo.PNG" 
+                alt="KopiKita" 
+                className="w-10 h-10 object-contain rounded-full bg-forest-900/60 p-0.5 border border-gold-500/40" 
+              />
+              <span className="font-headline text-3xl sm:text-4xl text-white tracking-widest uppercase">
                 KOPIKITA<span className="text-gold-500">.</span>
               </span>
             </div>
@@ -34,7 +39,7 @@ export default function Footer({ onNavigate }) {
                 className="w-9 h-9 rounded-full bg-forest-900 border border-forest-700/60 hover:bg-gold-500 hover:text-forest-950 flex items-center justify-center text-white transition-all text-xs font-bold"
                 title="X"
               >
-                𝕏
+                X
               </a>
               <a 
                 href="#" 

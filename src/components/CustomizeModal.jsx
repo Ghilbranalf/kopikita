@@ -119,7 +119,7 @@ export default function CustomizeModal({ isOpen, onClose, item, onAddToCart, edi
                 }`}
               >
                 <Snowflake className="w-4 h-4 text-cyan-400" />
-                <span>❄️ DINGIN (ICE COLD)</span>
+                <span>DINGIN (ICE COLD)</span>
               </button>
 
               <button
@@ -132,7 +132,7 @@ export default function CustomizeModal({ isOpen, onClose, item, onAddToCart, edi
                 }`}
               >
                 <Flame className="w-4 h-4 text-gold-500" />
-                <span>🔥 PANAS (HOT FRESH)</span>
+                <span>PANAS (HOT FRESH)</span>
               </button>
             </div>
           </div>
@@ -144,9 +144,9 @@ export default function CustomizeModal({ isOpen, onClose, item, onAddToCart, edi
             </label>
             <div className="grid grid-cols-3 gap-2.5">
               {[
-                { id: 'Less', label: '🍃 LESS', desc: '50% Gula' },
-                { id: 'Normal', label: '🍯 NORMAL', desc: '100% Pas' },
-                { id: 'Extra', label: '🍭 EXTRA', desc: '120% Manis' }
+                { id: 'Less', label: 'LESS', desc: '50% Gula' },
+                { id: 'Normal', label: 'NORMAL', desc: '100% Pas' },
+                { id: 'Extra', label: 'EXTRA', desc: '120% Manis' }
               ].map((opt) => (
                 <button
                   key={opt.id}

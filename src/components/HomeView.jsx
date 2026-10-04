@@ -49,7 +49,7 @@ export default function HomeView({ onExploreMenu, onSelectItem }) {
             f
           </a>
           <a href="#" className="w-8 h-8 rounded-full bg-forest-800 hover:bg-gold-500 hover:text-forest-950 flex items-center justify-center text-xs text-cream-100 transition-colors">
-            𝕏
+            X
           </a>
           <a href="#" className="w-8 h-8 rounded-full bg-forest-800 hover:bg-gold-500 hover:text-forest-950 flex items-center justify-center text-xs text-cream-100 transition-colors">
             ig
@@ -78,8 +78,10 @@ export default function HomeView({ onExploreMenu, onSelectItem }) {
 
             {/* Right Badge: Embark on your coffee journey */}
             <div className="text-left sm:text-right max-w-xs">
-              <div className="flex items-center sm:justify-end gap-1.5 text-gold-400 text-xs font-bold mb-1">
-                <span>☕ ☕ ☕</span>
+              <div className="flex items-center sm:justify-end gap-1.5 text-gold-400 mb-1">
+                <Coffee className="w-3.5 h-3.5" />
+                <Coffee className="w-3.5 h-3.5" />
+                <Coffee className="w-3.5 h-3.5" />
               </div>
               <p className="text-[10px] font-bold uppercase tracking-wider text-cream-200/80 leading-snug">
                 EMBARK ON YOUR COFFEE JOURNEY AND SAVOR EVERY MOMENT
@@ -246,37 +248,37 @@ export default function HomeView({ onExploreMenu, onSelectItem }) {
                 <span className="flex items-center gap-3">
                   <Coffee className="w-4 h-4 text-gold-500" />
                   <span>MOCHANE</span>
-                  <span className="text-gold-500">★</span>
+                  <span className="text-gold-500 font-bold">•</span>
                 </span>
                 <span className="flex items-center gap-3">
                   <span>DOPPIO</span>
-                  <span className="text-gold-500">★</span>
+                  <span className="text-gold-500 font-bold">•</span>
                 </span>
                 <span className="flex items-center gap-3">
                   <span>CALAO</span>
-                  <span className="text-gold-500">★</span>
+                  <span className="text-gold-500 font-bold">•</span>
                 </span>
                 <span className="flex items-center gap-3">
                   <Coffee className="w-4 h-4 text-gold-500" />
                   <span>AMERICANO</span>
-                  <span className="text-gold-500">★</span>
+                  <span className="text-gold-500 font-bold">•</span>
                 </span>
                 <span className="flex items-center gap-3">
                   <span>KOPI SUSU AREN</span>
-                  <span className="text-gold-500">★</span>
+                  <span className="text-gold-500 font-bold">•</span>
                 </span>
                 <span className="flex items-center gap-3">
                   <span>CAPPUCCINO</span>
-                  <span className="text-gold-500">★</span>
+                  <span className="text-gold-500 font-bold">•</span>
                 </span>
                 <span className="flex items-center gap-3">
                   <Coffee className="w-4 h-4 text-gold-500" />
                   <span>KINKER MILKSHAKE</span>
-                  <span className="text-gold-500">★</span>
+                  <span className="text-gold-500 font-bold">•</span>
                 </span>
                 <span className="flex items-center gap-3">
                   <span>FLAT WHITE</span>
-                  <span className="text-gold-500">★</span>
+                  <span className="text-gold-500 font-bold">•</span>
                 </span>
               </div>
             ))}
@@ -306,7 +308,7 @@ export default function HomeView({ onExploreMenu, onSelectItem }) {
               </span>{' '}
               PREMIUM ARABICA FRESH BEANS{' '}
               <span className="inline-flex items-center justify-center w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-forest-900 text-gold-400 align-middle shadow">
-                ☕
+                <Coffee className="w-5 h-5 text-gold-400" />
               </span>{' '}
               AND FRESHLY{' '}
               <span className="inline-block w-16 sm:w-24 h-8 sm:h-12 rounded-full overflow-hidden align-middle border-2 border-gold-500 shadow">
@@ -370,7 +372,7 @@ export default function HomeView({ onExploreMenu, onSelectItem }) {
                       : 'bg-white/80 hover:bg-white border-forest-950/20 text-forest-900 hover:border-gold-500 hover:scale-105'
                   }`}
                 >
-                  <span className="text-gold-500 text-[10px]">☕</span>
+                  <Coffee className="w-3.5 h-3.5 text-gold-500" />
                   <span>{pill.label}</span>
                 </button>
               );
